@@ -1,4 +1,4 @@
-FROM node:22 AS verify-format
+FROM node:24 AS verify-format
 WORKDIR /code
 COPY package.json yarn.lock ./
 RUN yarn
